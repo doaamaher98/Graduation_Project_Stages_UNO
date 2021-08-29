@@ -1,0 +1,600 @@
+Fore: -171.00 degrees
+
+Middle: 86.00 degrees
+
+Ring: -92.00 degrees
+
+Pinky: 66.00 degrees
+
+Resistance 1: 5547.11 ohms
+Resistance 2: 5547.11 ohms
+Resistance 3: 1071.43 ohms
+Resistance 4: 11268.19 ohms
+Resistance 5: 2949.37 ohms
+
+Thumb : 104.00 degrees
+
+Fore: -157.00 degrees
+
+Middle: 88.00 degrees
+
+Ring: -128.00 degrees
+
+Pinky: 63.00 degrees
+
+Resistance 1: 5690.18 ohms
+Resistance 2: 5690.18 ohms
+Resistance 3: 1095.45 ohms
+Resistance 4: 10625.00 ohms
+Resistance 5: 2867.92 ohms
+
+Thumb : 108.00 degrees
+
+Fore: -178.00 degrees
+
+Middle: 85.00 degrees
+
+Ring: -108.00 degrees
+
+Pinky: 68.00 degrees
+
+Resistance 1: 5642.20 ohms
+Resistance 2: 5642.20 ohms
+Resistance 3: 1095.45 ohms
+Resistance 4: 11006.16 ohms
+Resistance 5: 3234.15 ohms
+
+Thumb : 107.00 degrees
+
+Fore: -171.00 degrees
+
+Middle: 85.00 degrees
+
+Ring: -120.00 degrees
+
+Pinky: 46.00 degrees
+
+Resistance 1: 5738.46 ohms
+Resistance 2: 5738.46 ohms
+Resistance 3: 1059.46 ohms
+Resistance 4: 10177.51 ohms
+Resistance 5: 2900.38 ohms
+
+Thumb : 110.00 degrees
+
+Fore: -185.00 degrees
+
+Middle: 89.00 degrees
+
+Ring: -95.00 degrees
+
+Pinky: 66.00 degrees
+
+Resistance 1: 5547.11 ohms
+Resistance 2: 5547.11 ohms
+Resistance 3: 1023.71 ohms
+Resistance 4: 10337.97 ohms
+Resistance 5: 2739.73 ohms
+
+Thumb : 104.00 degrees
+
+Fore: -157.00 degrees
+
+Middle: 92.00 degrees
+
+Ring: -100.00 degrees
+
+Pinky: 76.00 degrees
+
+Resistance 1: 5523.52 ohms
+Resistance 2: 5523.52 ohms
+Resistance 3: 1011.84 ohms
+Resistance 4: 9301.89 ohms
+Resistance 5: 2598.52 ohms
+
+Thumb : 103.00 degrees
+
+Fore: -153.00 degrees
+
+Middle: 93.00 degrees
+
+Ring: -69.00 degrees
+
+Pinky: 85.00 degrees
+
+Resistance 1: 5314.37 ohms
+Resistance 2: 5314.37 ohms
+Resistance 3: 1000.00 ohms
+Resistance 4: 9014.87 ohms
+Resistance 5: 2506.11 ohms
+
+Thumb : 96.00 degrees
+
+Fore: -122.00 degrees
+
+Middle: 94.00 degrees
+
+Ring: -60.00 degrees
+
+Pinky: 90.00 degrees
+
+Resistance 1: 5406.63 ohms
+Resistance 2: 5406.63 ohms
+Resistance 3: 988.19 ohms
+Resistance 4: 7978.91 ohms
+Resistance 5: 2460.41 ohms
+
+Thumb : 99.00 degrees
+
+Fore: -135.00 degrees
+
+Middle: 95.00 degrees
+
+Ring: -29.00 degrees
+
+Pinky: 93.00 degrees
+
+Resistance 1: 11268.19 ohms
+Resistance 2: 11268.19 ohms
+Resistance 3: 1143.79 ohms
+Resistance 4: 9902.72 ohms
+Resistance 5: 2933.00 ohms
+
+Thumb : 288.00 degrees
+
+Fore: -1015.00 degrees
+
+Middle: 81.00 degrees
+
+Ring: -87.00 degrees
+
+Pinky: 64.00 degrees
+
+Resistance 1: 7457.34 ohms
+Resistance 2: 7457.34 ohms
+Resistance 3: 1758.62 ohms
+Resistance 4: 15703.52 ohms
+Resistance 5: 3861.79 ohms
+
+Thumb : 165.00 degrees
+
+Fore: -443.00 degrees
+
+Middle: 22.00 degrees
+
+Ring: -261.00 degrees
+
+Pinky: 8.00 degrees
+
+Resistance 1: 6743.04 ohms
+Resistance 2: 6743.04 ohms
+Resistance 3: 1468.61 ohms
+Resistance 4: 11952.79 ohms
+Resistance 5: 3115.38 ohms
+
+Thumb : 142.00 degrees
+
+Fore: -336.00 degrees
+
+Middle: 50.00 degrees
+
+Ring: -148.00 degrees
+
+Pinky: 53.00 degrees
+
+Resistance 1: 7021.63 ohms
+Resistance 2: 7021.63 ohms
+Resistance 3: 1404.68 ohms
+Resistance 4: 11905.78 ohms
+Resistance 5: 3149.10 ohms
+
+Thumb : 151.00 degrees
+
+Fore: -378.00 degrees
+
+Middle: 56.00 degrees
+
+Ring: -147.00 degrees
+
+Pinky: 51.00 degrees
+
+Resistance 1: 6937.09 ohms
+Resistance 2: 6937.09 ohms
+Resistance 3: 1417.41 ohms
+Resistance 4: 10257.43 ohms
+Resistance 5: 3149.10 ohms
+
+Thumb : 149.00 degrees
+
+Fore: -365.00 degrees
+
+Middle: 55.00 degrees
+
+Ring: -97.00 degrees
+
+Pinky: 51.00 degrees
+
+Resistance 1: 6500.00 ohms
+Resistance 2: 6500.00 ohms
+Resistance 3: 1354.05 ohms
+Resistance 4: 10460.00 ohms
+Resistance 5: 3355.09 ohms
+
+Thumb : 135.00 degrees
+
+Fore: -300.00 degrees
+
+Middle: 61.00 degrees
+
+Ring: -103.00 degrees
+
+Pinky: 39.00 degrees
+
+Resistance 1: 6607.14 ohms
+Resistance 2: 6607.14 ohms
+Resistance 3: 1316.37 ohms
+Resistance 4: 10708.50 ohms
+Resistance 5: 3337.68 ohms
+
+Thumb : 138.00 degrees
+
+Fore: -316.00 degrees
+
+Middle: 64.00 degrees
+
+Ring: -111.00 degrees
+
+Pinky: 40.00 degrees
+
+Resistance 1: 6580.23 ohms
+Resistance 2: 6580.23 ohms
+Resistance 3: 1316.37 ohms
+Resistance 4: 10460.00 ohms
+Resistance 5: 3407.60 ohms
+
+Thumb : 137.00 degrees
+
+Fore: -312.00 degrees
+
+Middle: 64.00 degrees
+
+Ring: -103.00 degrees
+
+Pinky: 36.00 degrees
+
+Resistance 1: 6059.65 ohms
+Resistance 2: 6059.65 ohms
+Resistance 3: 1291.39 ohms
+Resistance 4: 9825.58 ohms
+Resistance 5: 3149.10 ohms
+
+Thumb : 120.00 degrees
+
+Fore: -233.00 degrees
+
+Middle: 67.00 degrees
+
+Ring: -84.00 degrees
+
+Pinky: 51.00 degrees
+
+Resistance 1: 6500.00 ohms
+Resistance 2: 6500.00 ohms
+Resistance 3: 1303.87 ohms
+Resistance 4: 10378.48 ohms
+Resistance 5: 3166.02 ohms
+
+Thumb : 135.00 degrees
+
+Fore: -300.00 degrees
+
+Middle: 66.00 degrees
+
+Ring: -101.00 degrees
+
+Pinky: 50.00 degrees
+
+Resistance 1: 6238.10 ohms
+Resistance 2: 6238.10 ohms
+Resistance 3: 1278.94 ohms
+Resistance 4: 10378.48 ohms
+Resistance 5: 3015.27 ohms
+
+Thumb : 126.00 degrees
+
+Fore: -260.00 degrees
+
+Middle: 68.00 degrees
+
+Ring: -101.00 degrees
+
+Pinky: 59.00 degrees
+
+Resistance 1: 6059.65 ohms
+Resistance 2: 6059.65 ohms
+Resistance 3: 1266.52 ohms
+Resistance 4: 10877.55 ohms
+Resistance 5: 2900.38 ohms
+
+Thumb : 120.00 degrees
+
+Fore: -233.00 degrees
+
+Middle: 69.00 degrees
+
+Ring: -116.00 degrees
+
+Pinky: 66.00 degrees
+
+Resistance 1: 9597.70 ohms
+Resistance 2: 9597.70 ohms
+Resistance 3: 1366.67 ohms
+Resistance 4: 11312.50 ohms
+Resistance 5: 3031.85 ohms
+
+Thumb : 234.00 degrees
+
+Fore: -764.00 degrees
+
+Middle: 60.00 degrees
+
+Ring: -129.00 degrees
+
+Pinky: 58.00 degrees
+
+Resistance 1: 8106.19 ohms
+Resistance 2: 8106.19 ohms
+Resistance 3: 2021.15 ohms
+Resistance 4: 18980.17 ohms
+Resistance 5: 3337.68 ohms
+
+Thumb : 186.00 degrees
+
+Fore: -540.00 degrees
+
+Middle: -1.00 degrees
+
+Ring: -359.00 degrees
+
+Pinky: 40.00 degrees
+
+Resistance 1: 7637.93 ohms
+Resistance 2: 7637.93 ohms
+Resistance 3: 1964.91 ohms
+Resistance 4: 15768.26 ohms
+Resistance 5: 3285.71 ohms
+
+Thumb : 171.00 degrees
+
+Fore: -470.00 degrees
+
+Middle: 3.00 degrees
+
+Ring: -263.00 degrees
+
+Pinky: 43.00 degrees
+
+Resistance 1: 6937.09 ohms
+Resistance 2: 6937.09 ohms
+Resistance 3: 1812.93 ohms
+Resistance 4: 15639.10 ohms
+Resistance 5: 3132.22 ohms
+
+Thumb : 149.00 degrees
+
+Fore: -365.00 degrees
+
+Middle: 17.00 degrees
+
+Ring: -259.00 degrees
+
+Pinky: 52.00 degrees
+
+Resistance 1: 12483.52 ohms
+Resistance 2: 12483.52 ohms
+Resistance 3: 3355.09 ohms
+Resistance 4: 19738.37 ohms
+Resistance 5: 4208.33 ohms
+
+Thumb : 327.00 degrees
+
+Fore: -1197.00 degrees
+
+Middle: -128.00 degrees
+
+Ring: -382.00 degrees
+
+Pinky: -12.00 degrees
+
+Resistance 1: 8267.86 ohms
+Resistance 2: 8267.86 ohms
+Resistance 3: 1758.62 ohms
+Resistance 4: 11582.28 ohms
+Resistance 5: 3621.84 ohms
+
+Thumb : 191.00 degrees
+
+Fore: -565.00 degrees
+
+Middle: 22.00 degrees
+
+Ring: -137.00 degrees
+
+Pinky: 23.00 degrees
+
+Resistance 1: 6881.19 ohms
+Resistance 2: 6881.19 ohms
+Resistance 3: 1651.48 ohms
+Resistance 4: 10583.50 ohms
+Resistance 5: 3302.99 ohms
+
+Thumb : 147.00 degrees
+
+Fore: -357.00 degrees
+
+Middle: 33.00 degrees
+
+Ring: -107.00 degrees
+
+Pinky: 42.00 degrees
+
+Resistance 1: 6881.19 ohms
+Resistance 2: 6881.19 ohms
+Resistance 3: 1625.00 ohms
+Resistance 4: 11136.37 ohms
+Resistance 5: 3407.60 ohms
+
+Thumb : 147.00 degrees
+
+Fore: -357.00 degrees
+
+Middle: 35.00 degrees
+
+Ring: -124.00 degrees
+
+Pinky: 36.00 degrees
+
+Resistance 1: 6853.38 ohms
+Resistance 2: 6853.38 ohms
+Resistance 3: 1598.64 ohms
+Resistance 4: 9597.70 ohms
+Resistance 5: 3217.05 ohms
+
+Thumb : 146.00 degrees
+
+Fore: -352.00 degrees
+
+Middle: 38.00 degrees
+
+Ring: -77.00 degrees
+
+Pinky: 47.00 degrees
+
+Resistance 1: 7222.22 ohms
+Resistance 2: 7222.22 ohms
+Resistance 3: 1533.26 ohms
+Resistance 4: 9157.30 ohms
+Resistance 5: 3081.84 ohms
+
+Thumb : 158.00 degrees
+
+Fore: -408.00 degrees
+
+Middle: 44.00 degrees
+
+Ring: -64.00 degrees
+
+Pinky: 55.00 degrees
+
+Resistance 1: 6526.66 ohms
+Resistance 2: 6526.66 ohms
+Resistance 3: 1507.31 ohms
+Resistance 4: 9485.71 ohms
+Resistance 5: 3065.13 ohms
+
+Thumb : 135.00 degrees
+
+Fore: -303.00 degrees
+
+Middle: 46.00 degrees
+
+Ring: -74.00 degrees
+
+Pinky: 56.00 degrees
+
+Resistance 1: 8300.54 ohms
+Resistance 2: 8300.54 ohms
+Resistance 3: 1704.80 ohms
+Resistance 4: 13144.80 ohms
+Resistance 5: 3731.54 ohms
+
+Thumb : 192.00 degrees
+
+Fore: -570.00 degrees
+
+Middle: 28.00 degrees
+
+Ring: -184.00 degrees
+
+Pinky: 16.00 degrees
+
+Resistance 1: 7050.00 ohms
+Resistance 2: 7050.00 ohms
+Resistance 3: 1758.62 ohms
+Resistance 4: 12937.22 ohms
+Resistance 5: 3549.67 ohms
+
+Thumb : 152.00 degrees
+
+Fore: -382.00 degrees
+
+Middle: 22.00 degrees
+
+Ring: -178.00 degrees
+
+Pinky: 27.00 degrees
+
+Resistance 1: 7107.02 ohms
+Resistance 2: 7107.02 ohms
+Resistance 3: 1625.00 ohms
+Resistance 4: 11582.28 ohms
+Resistance 5: 3268.48 ohms
+
+Thumb : 154.00 degrees
+
+Fore: -391.00 degrees
+
+Middle: 35.00 degrees
+
+Ring: -137.00 degrees
+
+Pinky: 44.00 degrees
+
+Resistance 1: 7251.26 ohms
+Resistance 2: 7251.26 ohms
+Resistance 3: 1638.23 ohms
+Resistance 4: 13302.96 ohms
+Resistance 5: 3658.21 ohms
+
+Thumb : 159.00 degrees
+
+Fore: -412.00 degrees
+
+Middle: 34.00 degrees
+
+Ring: -189.00 degrees
+
+Pinky: 20.00 degrees
+
+Resistance 1: 8010.56 ohms
+Resistance 2: 8010.56 ohms
+Resistance 3: 1651.48 ohms
+Resistance 4: 13680.56 ohms
+Resistance 5: 3549.67 ohms
+
+Thumb : 183.00 degrees
+
+Fore: -526.00 degrees
+
+Middle: 33.00 degrees
+
+Ring: -200.00 degrees
+
+Pinky: 27.00 degrees
+
+Resistance 1: 7915.94 ohms
+Resistance 2: 7915.94 ohms
+Resistance 3: 1638.23 ohms
+Resistance 4: 10666.67 ohms
+Resistance 5: 3567.64 ohms
+
+Thumb : 180.00 degrees
+
+Fore: -512.00 degrees
+
+Middle: 34.00 degrees
+
+Ring: -109.00 degrees
+
+Pinky: 26.00 degrees
+
