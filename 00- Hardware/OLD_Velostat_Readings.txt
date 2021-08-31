@@ -1,0 +1,117 @@
+/*********************************************************************/
+/* FLEX SENSOR (VELOSTAT) READINGS FROM DOAA'S HAND : FIRST TRY*/
+/*********************************************************************/
+
+// Change these constants according to your project's design
+const float VCC = 5;			// voltage at Ardunio 5V line
+const float R_DIV = 10000.0;	// resistor used to create a voltage divider
+
+/* Flex (1) : THUMB */
+const float flatResistance1 = 2300.0;	// resistance when flat
+const float bendResistance1 = 5100.0;	// resistance at 90 deg
+int flex1Pin = A0;
+/*********************************************************************/
+/* Flex (2) : Index */
+const float flatResistance2 = 4500.0;	// resistance when flat
+const float bendResistance2 = 3900.0;	// resistance at 90 deg
+int flex2Pin = A1;
+/*********************************************************************/
+/* Flex (3) : Middle */
+const float flatResistance3 = 2000.0;	// resistance when flat
+const float bendResistance3 = 1050.0;	// resistance at 90 deg
+int flex3Pin = A2;
+/*********************************************************************/
+/* Flex (4) : Ring */
+const float flatResistance4 = 7000.0;	// resistance when flat
+const float bendResistance4 = 4000.0;	// resistance at 90 deg
+int flex4Pin = A3;
+/*********************************************************************/
+/* Flex (5) : Ring */
+const float flatResistance5 = 4000.0;	// resistance when flat
+const float bendResistance5 = 2520.0;	// resistance at 90 deg
+int flex5Pin = A4;
+
+void setup() {
+	Serial.begin(9600);
+
+	pinMode(flex1Pin, INPUT);
+  pinMode(flex2Pin, INPUT);
+  pinMode(flex3Pin, INPUT);
+  pinMode(flex4Pin, INPUT);
+  pinMode(flex5Pin, INPUT);
+}
+
+void loop() {
+	// Read the ADC from THUMB, and calculate voltage and resistance from it
+	int ADCflex1 = analogRead(flex1Pin);
+	float Vflex1 = ADCflex1 * VCC / 1023.0;
+	float Rflex1 = R_DIV * (VCC / Vflex1 - 1.0);
+	Serial.println("Resistance 1: " + String(Rflex1) + " ohms");
+/*********************************************************************/
+
+  // Read the ADC from INDEX, and calculate voltage and resistance from it
+	int ADCflex2 = analogRead(flex2Pin);
+	float Vflex2 = ADCflex1 * VCC / 1023.0;
+	float Rflex2 = R_DIV * (VCC / Vflex2 - 1.0);
+	Serial.println("Resistance 2: " + String(Rflex2) + " ohms");
+/*********************************************************************/
+
+  // Read the ADC from MIDDLE, and calculate voltage and resistance from it
+	int ADCflex3 = analogRead(flex3Pin);
+	float Vflex3 = ADCflex3 * VCC / 1023.0;
+	float Rflex3 = R_DIV * (VCC / Vflex3 - 1.0);
+	Serial.println("Resistance 3: " + String(Rflex3) + " ohms");
+/*********************************************************************/
+
+  // Read the ADC from RING, and calculate voltage and resistance from it
+	int ADCflex4 = analogRead(flex4Pin);
+	float Vflex4 = ADCflex4 * VCC / 1023.0;
+	float Rflex4 = R_DIV * (VCC / Vflex4 - 1.0);
+	Serial.println("Resistance 4: " + String(Rflex4) + " ohms");
+/*********************************************************************/
+
+  // Read the ADC from LITTLE, and calculate voltage and resistance from it
+	int ADCflex5 = analogRead(flex5Pin);
+	float Vflex5 = ADCflex5 * VCC / 1023.0;
+	float Rflex5 = R_DIV * (VCC / Vflex5 - 1.0);
+	Serial.println("Resistance 5: " + String(Rflex5) + " ohms");
+
+/*********************************************************************/
+	Serial.println();
+/*********************************************************************/
+
+	// Use the calculated from resistance (1) to estimate the sensor's bend angle:
+	float angle1 = map(Rflex1, flatResistance1, bendResistance1, 0, 90.0);
+	Serial.println("Thumb : " + String(angle1) + " degrees");
+	Serial.println();
+
+/*********************************************************************/
+	// Use the calculated from resistance (1) to estimate the sensor's bend angle:
+	float angle2 = map(Rflex2, flatResistance2, bendResistance2, 0, 90.0);
+	Serial.println("Fore: " + String(angle2) + " degrees");
+	Serial.println();
+
+/*********************************************************************/
+
+	// Use the calculated from resistance (1) to estimate the sensor's bend angle:
+	float angle3 = map(Rflex3, flatResistance3, bendResistance3, 0, 90.0);
+	Serial.println("Middle: " + String(angle3) + " degrees");
+	Serial.println();
+
+/*********************************************************************/
+
+	// Use the calculated from resistance (1) to estimate the sensor's bend angle:
+	float angle4 = map(Rflex4, flatResistance4, bendResistance4, 0, 90.0);
+	Serial.println("Ring: " + String(angle4) + " degrees");
+	Serial.println();
+/*********************************************************************/
+
+	// Use the calculated from resistance (1) to estimate the sensor's bend angle:
+	float angle5 = map(Rflex5, flatResistance5, bendResistance5, 0, 90.0);
+	Serial.println("Pinky: " + String(angle5) + " degrees");
+	Serial.println();
+
+/*********************************************************************/
+/*********************************************************************/
+	delay(1000);
+}
