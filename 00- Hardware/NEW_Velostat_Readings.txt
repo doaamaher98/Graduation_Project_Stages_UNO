@@ -23,7 +23,7 @@ int flex3Pin = A2;
 /*********************************************************************/
 /* Flex (4) : Ring */
 const float flatResistance4 = 3500.0;  // resistance when flat
-const float bendResistance4 = 3000.0;  // resistance at 90 deg
+const float bendResistance4 = 3100.0;  // resistance at 90 deg
 int flex4Pin = A3;
 /*********************************************************************/
 /* Flex (5) : Pinky */
