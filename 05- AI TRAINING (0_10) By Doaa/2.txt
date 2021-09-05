@@ -1,0 +1,728 @@
+00 degrees
+
+Middle: -299.00 degrees
+
+Ring: -27.00 degrees
+
+Pinky: 71.00 degrees
+
+R1: 6315.79 ohms
+R2: 9597.70 ohms
+R3: 7338.98 ohms
+R4: 3621.84 ohms
+R5: 9265.54 ohms
+
+Thumb : -253.00 degrees
+
+Fore: -1187.00 degrees
+
+Middle: -600.00 degrees
+
+Ring: -27.00 degrees
+
+Pinky: 71.00 degrees
+
+R1: 6526.66 ohms
+R2: 11006.16 ohms
+R3: 12533.04 ohms
+R4: 3658.21 ohms
+R5: 9229.32 ohms
+
+Thumb : -272.00 degrees
+
+Fore: -1441.00 degrees
+
+Middle: -1535.00 degrees
+
+Ring: -35.00 degrees
+
+Pinky: 71.00 degrees
+
+R1: 6368.00 ohms
+R2: 10297.62 ohms
+R3: 8909.43 ohms
+R4: 3731.54 ohms
+R5: 9121.50 ohms
+
+Thumb : -258.00 degrees
+
+Fore: -1313.00 degrees
+
+Middle: -883.00 degrees
+
+Ring: -51.00 degrees
+
+Pinky: 70.00 degrees
+
+R1: 6084.91 ohms
+R2: 9980.47 ohms
+R3: 8042.33 ohms
+R4: 3861.79 ohms
+R5: 8770.64 ohms
+
+Thumb : -232.00 degrees
+
+Fore: -1256.00 degrees
+
+Middle: -727.00 degrees
+
+Ring: -81.00 degrees
+
+Pinky: 66.00 degrees
+
+R1: 5406.63 ohms
+R2: 9265.54 ohms
+R3: 7251.26 ohms
+R4: 3640.00 ohms
+R5: 8736.26 ohms
+
+Thumb : -171.00 degrees
+
+Fore: -1127.00 degrees
+
+Middle: -585.00 degrees
+
+Ring: -31.00 degrees
+
+Pinky: 66.00 degrees
+
+R1: 5223.21 ohms
+R2: 8432.43 ohms
+R3: 6743.04 ohms
+R4: 3567.64 ohms
+R5: 8633.88 ohms
+
+Thumb : -155.00 degrees
+
+Fore: -977.00 degrees
+
+Middle: -493.00 degrees
+
+Ring: -15.00 degrees
+
+Pinky: 64.00 degrees
+
+R1: 5044.12 ohms
+R2: 8366.25 ohms
+R3: 6661.24 ohms
+R4: 3567.64 ohms
+R5: 8702.01 ohms
+
+Thumb : -138.00 degrees
+
+Fore: -965.00 degrees
+
+Middle: -478.00 degrees
+
+Ring: -15.00 degrees
+
+Pinky: 65.00 degrees
+
+R1: 6315.79 ohms
+R2: 12988.76 ohms
+R3: 8532.61 ohms
+R4: 3937.33 ohms
+R5: 9014.87 ohms
+
+Thumb : -253.00 degrees
+
+Fore: -1797.00 degrees
+
+Middle: -815.00 degrees
+
+Ring: -98.00 degrees
+
+Pinky: 68.00 degrees
+
+R1: 5835.91 ohms
+R2: 14070.59 ohms
+R3: 10177.51 ohms
+R4: 5383.46 ohms
+R5: 10583.50 ohms
+
+Thumb : -210.00 degrees
+
+Fore: -1992.00 degrees
+
+Middle: -1111.00 degrees
+
+Ring: -423.00 degrees
+
+Pinky: 85.00 degrees
+
+R1: 6553.40 ohms
+R2: 12047.42 ohms
+R3: 9635.32 ohms
+R4: 4267.78 ohms
+R5: 10257.43 ohms
+
+Thumb : -274.00 degrees
+
+Fore: -1628.00 degrees
+
+Middle: -1014.00 degrees
+
+Ring: -172.00 degrees
+
+Pinky: 82.00 degrees
+
+R1: 6186.71 ohms
+R2: 10963.11 ohms
+R3: 8566.24 ohms
+R4: 3994.53 ohms
+R5: 9864.08 ohms
+
+Thumb : -241.00 degrees
+
+Fore: -1433.00 degrees
+
+Middle: -821.00 degrees
+
+Ring: -111.00 degrees
+
+Pinky: 77.00 degrees
+
+R1: 6034.48 ohms
+R2: 9448.67 ohms
+R3: 8170.52 ohms
+R4: 3994.53 ohms
+R5: 9673.08 ohms
+
+Thumb : -228.00 degrees
+
+Fore: -1160.00 degrees
+
+Middle: -750.00 degrees
+
+Ring: -111.00 degrees
+
+Pinky: 75.00 degrees
+
+R1: 5666.16 ohms
+R2: 8944.44 ohms
+R3: 8138.30 ohms
+R4: 3861.79 ohms
+R5: 9338.38 ohms
+
+Thumb : -194.00 degrees
+
+Fore: -1069.00 degrees
+
+Middle: -744.00 degrees
+
+Ring: -81.00 degrees
+
+Pinky: 72.00 degrees
+
+R1: 5860.46 ohms
+R2: 9050.28 ohms
+R3: 7577.32 ohms
+R4: 3880.60 ohms
+R5: 9485.71 ohms
+
+Thumb : -212.00 degrees
+
+Fore: -1089.00 degrees
+
+Middle: -643.00 degrees
+
+Ring: -85.00 degrees
+
+Pinky: 73.00 degrees
+
+R1: 6110.24 ohms
+R2: 8633.88 ohms
+R3: 7760.42 ohms
+R4: 3880.60 ohms
+R5: 9411.77 ohms
+
+Thumb : -234.00 degrees
+
+Fore: -1013.00 degrees
+
+Middle: -676.00 degrees
+
+Ring: -85.00 degrees
+
+Pinky: 73.00 degrees
+
+R1: 6993.36 ohms
+R2: 10297.62 ohms
+R3: 10625.00 ohms
+R4: 4013.70 ohms
+R5: 9411.77 ohms
+
+Thumb : -314.00 degrees
+
+Fore: -1313.00 degrees
+
+Middle: -1192.00 degrees
+
+Ring: -115.00 degrees
+
+Pinky: 73.00 degrees
+
+R1: 6688.42 ohms
+R2: 10750.51 ohms
+R3: 8138.30 ohms
+R4: 3805.67 ohms
+R5: 9301.89 ohms
+
+Thumb : -286.00 degrees
+
+Fore: -1395.00 degrees
+
+Middle: -744.00 degrees
+
+Ring: -68.00 degrees
+
+Pinky: 72.00 degrees
+
+R1: 6161.14 ohms
+R2: 9157.30 ohms
+R3: 7947.37 ohms
+R4: 3787.06 ohms
+R5: 9265.54 ohms
+
+Thumb : -239.00 degrees
+
+Fore: -1108.00 degrees
+
+Middle: -710.00 degrees
+
+Ring: -64.00 degrees
+
+Pinky: 71.00 degrees
+
+R1: 6034.48 ohms
+R2: 9375.00 ohms
+R3: 7760.42 ohms
+R4: 3731.54 ohms
+R5: 9597.70 ohms
+
+Thumb : -228.00 degrees
+
+Fore: -1147.00 degrees
+
+Middle: -676.00 degrees
+
+Ring: -51.00 degrees
+
+Pinky: 75.00 degrees
+
+R1: 6186.71 ohms
+R2: 8770.64 ohms
+R3: 7760.42 ohms
+R4: 3750.00 ohms
+R5: 9485.71 ohms
+
+Thumb : -241.00 degrees
+
+Fore: -1038.00 degrees
+
+Middle: -676.00 degrees
+
+Ring: -56.00 degrees
+
+Pinky: 73.00 degrees
+
+R1: 6263.91 ohms
+R2: 8432.43 ohms
+R3: 7397.96 ohms
+R4: 3768.51 ohms
+R5: 9375.00 ohms
+
+Thumb : -248.00 degrees
+
+Fore: -977.00 degrees
+
+Middle: -611.00 degrees
+
+Ring: -60.00 degrees
+
+Pinky: 72.00 degrees
+
+R1: 6084.91 ohms
+R2: 8566.24 ohms
+R3: 7222.22 ohms
+R4: 3731.54 ohms
+R5: 9485.71 ohms
+
+Thumb : -232.00 degrees
+
+Fore: -1001.00 degrees
+
+Middle: -579.00 degrees
+
+Ring: -51.00 degrees
+
+Pinky: 73.00 degrees
+
+R1: 6263.91 ohms
+R2: 8633.88 ohms
+R3: 7107.02 ohms
+R4: 3731.54 ohms
+R5: 9338.38 ohms
+
+Thumb : -248.00 degrees
+
+Fore: -1013.00 degrees
+
+Middle: -559.00 degrees
+
+Ring: -51.00 degrees
+
+Pinky: 72.00 degrees
+
+R1: 7164.43 ohms
+R2: 8399.28 ohms
+R3: 7050.00 ohms
+R4: 3768.51 ohms
+R5: 9375.00 ohms
+
+Thumb : -329.00 degrees
+
+Fore: -971.00 degrees
+
+Middle: -548.00 degrees
+
+Ring: -60.00 degrees
+
+Pinky: 72.00 degrees
+
+R1: 6607.14 ohms
+R2: 8566.24 ohms
+R3: 6853.38 ohms
+R4: 3768.51 ohms
+R5: 9485.71 ohms
+
+Thumb : -279.00 degrees
+
+Fore: -1001.00 degrees
+
+Middle: -513.00 degrees
+
+Ring: -60.00 degrees
+
+Pinky: 73.00 degrees
+
+R1: 6634.15 ohms
+R2: 8979.59 ohms
+R3: 6661.24 ohms
+R4: 3713.14 ohms
+R5: 9301.89 ohms
+
+Thumb : -282.00 degrees
+
+Fore: -1076.00 degrees
+
+Middle: -478.00 degrees
+
+Ring: -47.00 degrees
+
+Pinky: 72.00 degrees
+
+R1: 6553.40 ohms
+R2: 8042.33 ohms
+R3: 7078.46 ohms
+R4: 3658.21 ohms
+R5: 9375.00 ohms
+
+Thumb : -274.00 degrees
+
+Fore: -907.00 degrees
+
+Middle: -554.00 degrees
+
+Ring: -35.00 degrees
+
+Pinky: 72.00 degrees
+
+R1: 7487.18 ohms
+R2: 12142.86 ohms
+R3: 8399.28 ohms
+R4: 3768.51 ohms
+R5: 9749.03 ohms
+
+Thumb : -358.00 degrees
+
+Fore: -1645.00 degrees
+
+Middle: -791.00 degrees
+
+Ring: -60.00 degrees
+
+Pinky: 76.00 degrees
+
+R1: 7791.30 ohms
+R2: 8979.59 ohms
+R3: 10708.50 ohms
+R4: 3621.84 ohms
+R5: 9710.98 ohms
+
+Thumb : -386.00 degrees
+
+Fore: -1076.00 degrees
+
+Middle: -1207.00 degrees
+
+Ring: -27.00 degrees
+
+Pinky: 76.00 degrees
+
+R1: 7729.64 ohms
+R2: 7978.91 ohms
+R3: 9635.32 ohms
+R4: 3621.84 ohms
+R5: 9749.03 ohms
+
+Thumb : -380.00 degrees
+
+Fore: -896.00 degrees
+
+Middle: -1014.00 degrees
+
+Ring: -27.00 degrees
+
+Pinky: 76.00 degrees
+
+R1: 7280.40 ohms
+R2: 7457.34 ohms
+R3: 8465.70 ohms
+R4: 3694.78 ohms
+R5: 9448.67 ohms
+
+Thumb : -340.00 degrees
+
+Fore: -802.00 degrees
+
+Middle: -803.00 degrees
+
+Ring: -43.00 degrees
+
+Pinky: 73.00 degrees
+
+R1: 7251.26 ohms
+R2: 8202.85 ohms
+R3: 10877.55 ohms
+R4: 4129.83 ohms
+R5: 11092.78 ohms
+
+Thumb : -337.00 degrees
+
+Fore: -936.00 degrees
+
+Middle: -1237.00 degrees
+
+Ring: -141.00 degrees
+
+Pinky: 90.00 degrees
+
+R1: 7822.30 ohms
+R2: 7978.91 ohms
+R3: 12239.13 ohms
+R4: 4110.34 ohms
+R5: 10666.67 ohms
+
+Thumb : -388.00 degrees
+
+Fore: -896.00 degrees
+
+Middle: -1483.00 degrees
+
+Ring: -137.00 degrees
+
+Pinky: 86.00 degrees
+
+R1: 8499.10 ohms
+R2: 11812.37 ohms
+R3: 9375.00 ohms
+R4: 3918.37 ohms
+R5: 9229.32 ohms
+
+Thumb : -449.00 degrees
+
+Fore: -1586.00 degrees
+
+Middle: -967.00 degrees
+
+Ring: -94.00 degrees
+
+Pinky: 71.00 degrees
+
+R1: 9121.50 ohms
+R2: 10177.51 ohms
+R3: 8805.15 ohms
+R4: 3805.67 ohms
+R5: 9229.32 ohms
+
+Thumb : -505.00 degrees
+
+Fore: -1291.00 degrees
+
+Middle: -864.00 degrees
+
+Ring: -68.00 degrees
+
+Pinky: 71.00 degrees
+
+R1: 8333.33 ohms
+R2: 9193.25 ohms
+R3: 8333.33 ohms
+R4: 3694.78 ohms
+R5: 9229.32 ohms
+
+Thumb : -434.00 degrees
+
+Fore: -1114.00 degrees
+
+Middle: -779.00 degrees
+
+Ring: -43.00 degrees
+
+Pinky: 71.00 degrees
+
+R1: 8202.85 ohms
+R2: 8465.70 ohms
+R3: 8010.56 ohms
+R4: 3567.64 ohms
+R5: 8944.44 ohms
+
+Thumb : -423.00 degrees
+
+Fore: -983.00 degrees
+
+Middle: -721.00 degrees
+
+Ring: -15.00 degrees
+
+Pinky: 68.00 degrees
+
+R1: 8170.52 ohms
+R2: 7698.96 ohms
+R3: 8499.10 ohms
+R4: 3531.75 ohms
+R5: 8702.01 ohms
+
+Thumb : -420.00 degrees
+
+Fore: -845.00 degrees
+
+Middle: -809.00 degrees
+
+Ring: -6.00 degrees
+
+Pinky: 65.00 degrees
+
+R1: 8138.30 ohms
+R2: 6853.38 ohms
+R3: 8667.88 ohms
+R4: 3496.04 ohms
+R5: 8633.88 ohms
+
+Thumb : -417.00 degrees
+
+Fore: -693.00 degrees
+
+Middle: -840.00 degrees
+
+Ring: 0.00 degrees
+
+Pinky: 64.00 degrees
+
+R1: 8566.24 ohms
+R2: 7760.42 ohms
+R3: 8399.28 ohms
+R4: 3640.00 ohms
+R5: 8770.64 ohms
+
+Thumb : -455.00 degrees
+
+Fore: -856.00 degrees
+
+Middle: -791.00 degrees
+
+Ring: -31.00 degrees
+
+Pinky: 66.00 degrees
+
+R1: 8909.43 ohms
+R2: 8736.26 ohms
+R3: 8944.44 ohms
+R4: 3603.72 ohms
+R5: 9157.30 ohms
+
+Thumb : -486.00 degrees
+
+Fore: -1032.00 degrees
+
+Middle: -889.00 degrees
+
+Ring: -23.00 degrees
+
+Pinky: 70.00 degrees
+
+R1: 8300.54 ohms
+R2: 9980.47 ohms
+R3: 9157.30 ohms
+R4: 3496.04 ohms
+R5: 8944.44 ohms
+
+Thumb : -432.00 degrees
+
+Fore: -1256.00 degrees
+
+Middle: -928.00 degrees
+
+Ring: 0.00 degrees
+
+Pinky: 68.00 degrees
+
+R1: 8366.25 ohms
+R2: 7947.37 ohms
+R3: 7947.37 ohms
+R4: 3496.04 ohms
+R5: 8805.15 ohms
+
+Thumb : -437.00 degrees
+
+Fore: -890.00 degrees
+
+Middle: -710.00 degrees
+
+Ring: 0.00 degrees
+
+Pinky: 66.00 degrees
+
+R1: 8235.29 ohms
+R2: 7915.94 ohms
+R3: 7978.91 ohms
+R4: 3496.04 ohms
+R5: 8770.64 ohms
+
+Thumb : -426.00 degrees
+
+Fore: -884.00 degrees
+
+Middle: -716.00 degrees
+
+Ring: 0.00 degrees
+
+Pinky: 66.00 degrees
+
+R1: 8170.52 ohms
+R2: 8944.44 ohms
+R3: 7947.37 ohms
+R4: 3531.75 ohms
+R5: 8736.26 ohms
+
+Thumb : -420.00 degrees
+
+Fore: -1069.00 degrees
+
+Middle: -710.00 degrees
+
+Ring: -6.00 degrees
+
+Pinky: 66.00 degrees
+
