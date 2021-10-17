@@ -1,5 +1,5 @@
 /*********************************************************************/
-/* FLEX SENSOR (VELOSTAT) READINGS FROM DOAA'S HAND : SECOND TRY */
+/* FLEX SENSOR (VELOSTAT) READINGS FROM DOAA'S HAND */
 /*********************************************************************/
 
 // Change these constants according to your project's design
@@ -8,22 +8,22 @@ const float R_DIV = 10000.0;  // resistor used to create a voltage divider
 
 /* Flex (1) : THUMB */
 const float flatResistance1 = 3500.0;  // resistance when flat
-const float bendResistance1 = 1700.0;  // resistance at 90 deg
+const float bendResistance1 = 2500.0;  // resistance at 90 deg
 int flex1Pin = A0;
 /*********************************************************************/
 /* Flex (2) : Index */
 const float flatResistance2 = 3000.0;  // resistance when flat
-const float bendResistance2 = 2000.0;  // resistance at 90 deg
+const float bendResistance2 = 2500.0;  // resistance at 90 deg
 int flex2Pin = A1;
 /*********************************************************************/
 /* Flex (3) : Middle */
-const float flatResistance3 = 3500.0;  // resistance when flat
-const float bendResistance3 = 3550.0;  // resistance at 90 deg
+const float flatResistance3 = 4000.0;  // resistance when flat
+const float bendResistance3 = 3500.0;  // resistance at 90 deg
 int flex3Pin = A2;
 /*********************************************************************/
 /* Flex (4) : Ring */
 const float flatResistance4 = 3500.0;  // resistance when flat
-const float bendResistance4 = 2100.0;  // resistance at 90 deg
+const float bendResistance4 = 3100.0;  // resistance at 90 deg
 int flex4Pin = A3;
 /*********************************************************************/
 /* Flex (5) : Pinky */
