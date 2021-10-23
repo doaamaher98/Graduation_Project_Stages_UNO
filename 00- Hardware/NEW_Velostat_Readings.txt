@@ -86,7 +86,7 @@ void loop() {
 
   // Use the calculated from resistance (1) to estimate the sensor's bend angle:
   float angle1 = map(Rflex1, flatResistance1, bendResistance1, 0, 90.0);
-  Serial.println("Thumb : " + String(angle1) + " degrees");
+  Serial.println("Thumb: " + String(angle1) + " degrees");
   Serial.println();
 
   /*********************************************************************/
@@ -117,5 +117,5 @@ void loop() {
 
   /*********************************************************************/
   /*********************************************************************/
-  delay(1000);
+  delay(150);
 }
