@@ -3,7 +3,7 @@
 /*********************************************************************/
 
 #include <SoftwareSerial.h>
-SoftwareSerial MySerial (4,5); // TX AND RX
+SoftwareSerial MySerial (4,5); // TX -> 4 AND RX -> RX on UNO
 
 void setup() {
   // Setting baud rate
