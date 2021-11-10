@@ -18,6 +18,16 @@ void void_HAL_Seven_Segment_INIT ()
 	DIO_SetPinDirection(DIO_u8PORTA,DIO_u8PIN3,DIO_u8OUTPUT); //D
 	
 	// 2nd 7-Segment "Common Cathod"
+	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN0,DIO_u8OUTPUT); //A
+	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN1,DIO_u8OUTPUT); //B
+	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN2,DIO_u8OUTPUT); //C
+	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN3,DIO_u8OUTPUT); //D	
+	
+	DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN0,DIO_u8OUTPUT); //A
+	DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN1,DIO_u8OUTPUT); //B
+	DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN2,DIO_u8OUTPUT); //C
+	DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN3,DIO_u8OUTPUT); //D	
+	
 	DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN0,DIO_u8OUTPUT); //A
 	DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN1,DIO_u8OUTPUT); //B
 	DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN2,DIO_u8OUTPUT); //C
