@@ -4,6 +4,7 @@
 
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
+#include <avr/delay.h>
 
 #include "DIO_interface.h"
 #include "DIO_private.h"
@@ -60,7 +61,7 @@ void void_HAL_Seven_Segment_DISABLE2()
 	DIO_SetPinValue(DIO_u8PORTB,DIO_u8PIN1,DIO_u8LOW);
 }
 
-void void_HAL_Seven_Segment_WRITE_NO (u8 u8PortIdCopy ,u8 Number)
+void void_HAL_Seven_Segment_WRITE_1_NO (u8 u8PortIdCopy ,u8 Number)
 {
 	
 	/******************************************/
@@ -107,3 +108,79 @@ void void_HAL_Seven_Segment_WRITE_NO (u8 u8PortIdCopy ,u8 Number)
 				}
 	}
 }		
+
+
+void void_HAL_Seven_Segment_WRITE_2_NO (u8 u8PortIdCopy,u8 Number)
+{
+		void_HAL_Seven_Segment_INIT();
+		while(1)
+		{
+			if (Number < 100)
+			{
+				u8 Right= Number %10; //EN2;
+				u8 Left= Number /10;
+				
+				switch (u8PortIdCopy)
+					{
+						case DIO_u8PORTA:
+						
+						void_HAL_Seven_Segment_DISABLE2();
+						void_HAL_Seven_Segment_DISABLE1();
+	
+			
+						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTA,Left);
+						void_HAL_Seven_Segment_ENABLE1();
+					
+						
+						void_HAL_Seven_Segment_DISABLE1();
+						
+						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTA,Right);
+						void_HAL_Seven_Segment_ENABLE2();
+
+					
+						break;
+					
+						case DIO_u8PORTB:
+						void_HAL_Seven_Segment_DISABLE2();
+						void_HAL_Seven_Segment_DISABLE1();
+						
+						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTB,Left);
+						void_HAL_Seven_Segment_ENABLE1();
+
+						
+						void_HAL_Seven_Segment_DISABLE1();
+						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTB,Right);
+						void_HAL_Seven_Segment_ENABLE2();
+	
+						
+						break;
+					
+						case DIO_u8PORTC:
+						void_HAL_Seven_Segment_DISABLE2();
+						void_HAL_Seven_Segment_DISABLE1();
+			
+						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTC,Left);
+						void_HAL_Seven_Segment_ENABLE1();
+						
+						void_HAL_Seven_Segment_DISABLE1();
+						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTC,Right);
+						void_HAL_Seven_Segment_ENABLE2();
+				
+						break;
+					
+						case DIO_u8PORTD:
+						void_HAL_Seven_Segment_DISABLE2();
+						void_HAL_Seven_Segment_DISABLE1();	
+			
+						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTD,Left);
+						void_HAL_Seven_Segment_ENABLE1();
+						
+						void_HAL_Seven_Segment_DISABLE1();
+						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTD,Right);
+						void_HAL_Seven_Segment_ENABLE2();
+
+						break;
+					}
+			}				
+		}			
+}
