@@ -3,9 +3,9 @@
 #define MCAL_ADC_PRIVATE_H_
 
 /* Registers */
-#define ADCMUX  *((volatile u8*)0x27)
+#define ADMUX  *((volatile u8*)0x27)
 
-#define ADCRA   *((volatile u8*)0x26)
+#define ADCSRA   *((volatile u8*)0x26)
 #define SFIOR   *((volatile u8*)0x50)
 
 #define ADCL    *((volatile u8*)0x24)
