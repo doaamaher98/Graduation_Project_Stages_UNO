@@ -1,3 +1,4 @@
+/***************** LifeSign *******************/
 
 #include "BIT_MATH.h"
 #include "STD_TYPES.h"
