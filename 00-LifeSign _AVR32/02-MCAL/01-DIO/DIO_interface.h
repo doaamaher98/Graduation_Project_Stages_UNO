@@ -1,15 +1,16 @@
+/***************** LifeSign *******************/
 
 #ifndef DIO_INT_H_
 #define DIO_INT_H_
 
 
-/* Port Defines */
+/* Port  */
 #define DIO_u8PORTA		0
 #define DIO_u8PORTB		1
 #define DIO_u8PORTC		2
 #define DIO_u8PORTD		3
 
-/* PIN Defines */
+/* Pins */
 #define DIO_u8PIN0		0
 #define DIO_u8PIN1		1
 #define DIO_u8PIN2		2
