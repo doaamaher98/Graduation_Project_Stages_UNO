@@ -1,6 +1,6 @@
 /***************** LifeSign *******************/
 #include "BIT_MATH.h"
-#include "STD_LIB.h"
+#include "STD_TYPES.h"
 
 #include "ADC_config.h"
 #include "ADC_interface.h"
@@ -9,12 +9,17 @@
 void void_MCAL_ADC_INIT(void)
 {
 	/*************************************/
-	/*  1- Selecting the ADC Mode    	 */
+	/*   Selecting Voltage Reference	 */
 	ADMUX 	&= (ADC_VOLTAGE_REF_clr_msk);
 	ADMUX	|= (ADC_VOLTAGE_REF_SELECTOR_msk);
+	/*************************************/
+	/*************************************/
+	
+	/*  Selecting the ADC Mode    		 */
 
 	#if (ADC_MODE_SELECTOR == ADC_MODE_AUTO_TRIGGER)
 		SET_BIT(ADCSRA,5);
+
 		SFIOR &= (ADC_AUTO_TRIG_SRC_clr_msk);
 		SFIOR |= (ADC_AUTO_TRIG_SRCE_SELECTOR);
 		
@@ -24,7 +29,7 @@ void void_MCAL_ADC_INIT(void)
 	/*************************************/
 	/*************************************/
 	
-	/*  2- Selecting the ADC Adjustment  */
+	/*  Selecting the ADC Adjustment  */
 	#if   (ADC_ADJUSTMENT_SELECTOR == ADC_RIGHT_ADJUSTED)
 		CLR_BIT(ADMUX,5);
 	#elif (ADC_ADJUSTMENT_SELECTOR == ADC_LEFT_ADJUSTED)
@@ -33,13 +38,13 @@ void void_MCAL_ADC_INIT(void)
 	/*************************************/
 	/*************************************/
 	
-	/*  3- Clearing the Interrupt Flag   */
+	/*  Clearing the Interrupt Flag   */
 	SET_BIT(ADCSRA,4);
 
 	/*************************************/
 	/*************************************/
 	
-	/*  4- Enable the ADC     			 */
+	/*  Enable the ADC     			 */
 	SET_BIT(ADCSRA,7);
 	/*************************************/
 	/*************************************/
