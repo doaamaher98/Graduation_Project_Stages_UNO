@@ -15,7 +15,7 @@ u16 u16_MCAL_ADC_GetResult(void);
 	2- ADC_VOLTAGE_REF_AREF
 	3- ADC_VOLTAGE_REF_2_56v
  */
-#define ADC_VOLTAGE_REF_SELECTOR_msk        ADC_VOLTAGE_REF_VCC
+#define ADC_VOLTAGE_REF_SELECTOR_msk        ADC_VOLTAGE_REF_AVCC
 
 
 #define ADC_VOLTAGE_REF_mv                  5000
@@ -26,7 +26,7 @@ u16 u16_MCAL_ADC_GetResult(void);
 	1- ADC_MODE_AUTO_TRIGGER
 	2- ADC_MODE_SINGLE_CONVERSION
  */
-#define ADC_MODE_SELECTOR                  	ADC_MODE_SINGLE_CONVERSION 
+#define ADC_MODE_SELECTOR                  	ADC_MODE_SINGLE_CONVERION 
 
 
 /*  Configure the ADC Adjustment:
