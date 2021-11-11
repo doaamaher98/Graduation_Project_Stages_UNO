@@ -4,36 +4,43 @@
 
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
-#include <avr/delay.h>
 
 #include "DIO_interface.h"
 #include "DIO_private.h"
 
 
-void void_HAL_Seven_Segment_INIT ()
+void void_HAL_Seven_Segment_INIT (u8 u8PortIdCopy)
 {
+	switch (u8PortIdCopy)
+	{
+		case DIO_u8PORTA:
+			DIO_SetPinDirection(DIO_u8PORTA,DIO_u8PIN0,DIO_u8OUTPUT); //A
+			DIO_SetPinDirection(DIO_u8PORTA,DIO_u8PIN1,DIO_u8OUTPUT); //B
+			DIO_SetPinDirection(DIO_u8PORTA,DIO_u8PIN2,DIO_u8OUTPUT); //C
+			DIO_SetPinDirection(DIO_u8PORTA,DIO_u8PIN3,DIO_u8OUTPUT); //D
+		break;
 
-	DIO_SetPinDirection(DIO_u8PORTA,DIO_u8PIN0,DIO_u8OUTPUT); //A
-	DIO_SetPinDirection(DIO_u8PORTA,DIO_u8PIN1,DIO_u8OUTPUT); //B
-	DIO_SetPinDirection(DIO_u8PORTA,DIO_u8PIN2,DIO_u8OUTPUT); //C
-	DIO_SetPinDirection(DIO_u8PORTA,DIO_u8PIN3,DIO_u8OUTPUT); //D
+		case DIO_u8PORTB:
+			DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN0,DIO_u8OUTPUT); //A
+			DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN1,DIO_u8OUTPUT); //B
+			DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN2,DIO_u8OUTPUT); //C
+			DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN3,DIO_u8OUTPUT); //D
+		break;
 	
-	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN0,DIO_u8OUTPUT); //A
-	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN1,DIO_u8OUTPUT); //B
-	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN2,DIO_u8OUTPUT); //C
-	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN3,DIO_u8OUTPUT); //D	
+		case DIO_u8PORTC:
+			DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN0,DIO_u8OUTPUT); //A
+			DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN1,DIO_u8OUTPUT); //B
+			DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN2,DIO_u8OUTPUT); //C
+			DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN3,DIO_u8OUTPUT); //D
+		break;
 	
-	DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN0,DIO_u8OUTPUT); //A
-	DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN1,DIO_u8OUTPUT); //B
-	DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN2,DIO_u8OUTPUT); //C
-	DIO_SetPinDirection(DIO_u8PORTC,DIO_u8PIN3,DIO_u8OUTPUT); //D	
-	
-	DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN0,DIO_u8OUTPUT); //A
-	DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN1,DIO_u8OUTPUT); //B
-	DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN2,DIO_u8OUTPUT); //C
-	DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN3,DIO_u8OUTPUT); //D	
-
-	/* Enable */
+		case DIO_u8PORTD:
+			DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN0,DIO_u8OUTPUT); //A
+			DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN1,DIO_u8OUTPUT); //B
+			DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN2,DIO_u8OUTPUT); //C
+			DIO_SetPinDirection(DIO_u8PORTD,DIO_u8PIN3,DIO_u8OUTPUT); //D
+		break;
+	}
 	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN0,DIO_u8OUTPUT); //EN1
 	DIO_SetPinDirection(DIO_u8PORTB,DIO_u8PIN1,DIO_u8OUTPUT); //EN2
 }
@@ -61,7 +68,7 @@ void void_HAL_Seven_Segment_DISABLE2()
 	DIO_SetPinValue(DIO_u8PORTB,DIO_u8PIN1,DIO_u8LOW);
 }
 
-void void_HAL_Seven_Segment_WRITE_1_NO (u8 u8PortIdCopy ,u8 Number)
+void void_HAL_Seven_Segment_WRITE_NO (u8 u8PortIdCopy ,u8 Number)
 {
 	
 	/******************************************/
@@ -108,79 +115,3 @@ void void_HAL_Seven_Segment_WRITE_1_NO (u8 u8PortIdCopy ,u8 Number)
 				}
 	}
 }		
-
-
-void void_HAL_Seven_Segment_WRITE_2_NO (u8 u8PortIdCopy,u8 Number)
-{
-		void_HAL_Seven_Segment_INIT();
-		while(1)
-		{
-			if (Number < 100)
-			{
-				u8 Right= Number %10; //EN2;
-				u8 Left= Number /10;
-				
-				switch (u8PortIdCopy)
-					{
-						case DIO_u8PORTA:
-						
-						void_HAL_Seven_Segment_DISABLE2();
-						void_HAL_Seven_Segment_DISABLE1();
-	
-			
-						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTA,Left);
-						void_HAL_Seven_Segment_ENABLE1();
-					
-						
-						void_HAL_Seven_Segment_DISABLE1();
-						
-						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTA,Right);
-						void_HAL_Seven_Segment_ENABLE2();
-
-					
-						break;
-					
-						case DIO_u8PORTB:
-						void_HAL_Seven_Segment_DISABLE2();
-						void_HAL_Seven_Segment_DISABLE1();
-						
-						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTB,Left);
-						void_HAL_Seven_Segment_ENABLE1();
-
-						
-						void_HAL_Seven_Segment_DISABLE1();
-						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTB,Right);
-						void_HAL_Seven_Segment_ENABLE2();
-	
-						
-						break;
-					
-						case DIO_u8PORTC:
-						void_HAL_Seven_Segment_DISABLE2();
-						void_HAL_Seven_Segment_DISABLE1();
-			
-						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTC,Left);
-						void_HAL_Seven_Segment_ENABLE1();
-						
-						void_HAL_Seven_Segment_DISABLE1();
-						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTC,Right);
-						void_HAL_Seven_Segment_ENABLE2();
-				
-						break;
-					
-						case DIO_u8PORTD:
-						void_HAL_Seven_Segment_DISABLE2();
-						void_HAL_Seven_Segment_DISABLE1();	
-			
-						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTD,Left);
-						void_HAL_Seven_Segment_ENABLE1();
-						
-						void_HAL_Seven_Segment_DISABLE1();
-						void_HAL_Seven_Segment_WRITE_1_NO(DIO_u8PORTD,Right);
-						void_HAL_Seven_Segment_ENABLE2();
-
-						break;
-					}
-			}				
-		}			
-}
