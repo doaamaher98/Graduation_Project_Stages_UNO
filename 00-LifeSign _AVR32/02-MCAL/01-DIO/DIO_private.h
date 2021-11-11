@@ -1,3 +1,4 @@
+/***************** LifeSign *******************/
 
 #ifndef DIO_PRIV_H_
 #define DIO_PRIV_H_
