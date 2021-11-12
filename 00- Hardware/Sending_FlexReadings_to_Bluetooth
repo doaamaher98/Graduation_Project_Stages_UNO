@@ -123,8 +123,10 @@ void loop() {
   /* Array of floats */
   float arr_data[5] = {angle1,angle2,angle3,angle4,angle5};
 
+
   /* sendData in one string */
   Serial.print(String(arr_data[0]) + "," String(arr_data[1]) + "," String(arr_data[2]) + "," String(arr_data[3]) + "," + String(arr_data[4]));
+
 
   /* New Line */
   Serial.println();
