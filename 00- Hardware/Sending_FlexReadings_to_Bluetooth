@@ -1,0 +1,140 @@
+/*********************************************************************/
+/* FLEX SENSOR (VELOSTAT) READINGS FROM DOAA'S HAND */
+/*********************************************************************/
+
+#include <avr/io.h>
+/*
+#define FOSC    16000000 // Clock
+#define BAUD    9600
+#define MYUBRR  FOSC/16/BAUD-1
+*/
+
+// Change these constants according to your project's design
+const int VCC = 5;            // voltage at Ardunio 5V line
+const float R_DIV = 10000.0;  // resistor used to create a voltage divider
+
+/* Flex (1) : THUMB */
+const float flatResistance1 = 3500.0;  // resistance when flat
+const float bendResistance1 = 2500.0;  // resistance at 90 deg
+int flex1Pin = A0;
+/*********************************************************************/
+/* Flex (2) : Index */
+const float flatResistance2 = 3000.0;  // resistance when flat
+const float bendResistance2 = 2500.0;  // resistance at 90 deg
+int flex2Pin = A1;
+/*********************************************************************/
+/* Flex (3) : Middle */
+const float flatResistance3 = 4000.0;  // resistance when flat
+const float bendResistance3 = 3500.0;  // resistance at 90 deg
+int flex3Pin = A2;
+/*********************************************************************/
+/* Flex (4) : Ring */
+const float flatResistance4 = 3500.0;  // resistance when flat
+const float bendResistance4 = 3100.0;  // resistance at 90 deg
+int flex4Pin = A3;
+/*********************************************************************/
+/* Flex (5) : Pinky */
+const float flatResistance5 = 2500.0;   // resistance when flat
+const float bendResistance5 = 11000.0;  // resistance at 90 deg
+int flex5Pin = A4;
+
+/******************************************/
+
+void setup() {
+  // Setting baud rate
+  Serial.begin(9600);
+
+  pinMode(flex1Pin, INPUT);
+  pinMode(flex2Pin, INPUT);
+  pinMode(flex3Pin, INPUT);
+  pinMode(flex4Pin, INPUT);
+  pinMode(flex5Pin, INPUT);
+}
+
+/*********************************************************************/
+/*********************************************************************/
+
+void loop() {
+  // Read the ADC from THUMB, and calculate voltage and resistance from it
+  int ADCflex1 = analogRead(flex1Pin);
+  float Vflex1 = ADCflex1 * VCC / 1023.0;
+  float Rflex1 = R_DIV * (VCC / Vflex1 - 1.0);
+  /*********************************************************************/
+
+  // Read the ADC from INDEX, and calculate voltage and resistance from it
+  int ADCflex2 = analogRead(flex2Pin);
+  float Vflex2 = ADCflex2 * VCC / 1023.0;
+  float Rflex2 = R_DIV * (VCC / Vflex2 - 1.0);
+  /*********************************************************************/
+
+  // Read the ADC from MIDDLE, and calculate voltage and resistance from it
+  int ADCflex3 = analogRead(flex3Pin);
+  float Vflex3 = ADCflex3 * VCC / 1023.0;
+  float Rflex3 = R_DIV * (VCC / Vflex3 - 1.0);
+  /*********************************************************************/
+
+  // Read the ADC from RING, and calculate voltage and resistance from it
+  int ADCflex4 = analogRead(flex4Pin);
+  float Vflex4 = ADCflex4 * VCC / 1023.0;
+  float Rflex4 = R_DIV * (VCC / Vflex4 - 1.0);
+  /*********************************************************************/
+
+  // Read the ADC from LITTLE, and calculate voltage and resistance from it
+  int ADCflex5 = analogRead(flex5Pin);
+  float Vflex5 = ADCflex5 * VCC / 1023.0;
+  float Rflex5 = R_DIV * (VCC / Vflex5 - 1.0);
+  /*********************************************************************/
+  /****************************************************************/
+
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle1 = map(Rflex1, flatResistance1, bendResistance1, 0, 90.0);
+ // Serial.println(String(angle1));
+ 
+
+  /*********************************************************************/
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle2 = map(Rflex2, flatResistance2, bendResistance2, 0, 90.0);
+  //Serial.println(String(angle2));
+  
+
+  /*********************************************************************/
+
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle3 = map(Rflex3, flatResistance3, bendResistance3, 0, 90.0);
+  //Serial.println(String(angle3));
+
+
+  /*********************************************************************/
+
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle4 = map(Rflex4, flatResistance4, bendResistance4, 0, 90.0);
+  //Serial.println(String(angle4));
+
+  /*********************************************************************/
+
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle5 = map(Rflex5, flatResistance5, bendResistance5, 0, 90.0);
+  //Serial.println(String(angle5));
+
+  /******************************************************/
+  /****** Sending floats through Bluetooth Module ******/
+  /*****************************************************/
+
+  /* Array of floats */
+  float arr_data[5] = {angle1,angle2,angle3,angle4,angle5};
+
+  /* Looping through Array */
+  for (int i = 0; i<5; i++)
+  {
+    Serial.print(String(arr_data[i]) + ",");
+  }
+
+  /* New Line */
+  Serial.println();
+  
+  /*********************************************************************/
+  /*********** Sending data with a delay of 1 sec **********************/
+  /*********************************************************************/
+  delay(1000);
+}
+
