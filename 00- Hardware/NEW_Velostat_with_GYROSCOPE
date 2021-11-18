@@ -176,31 +176,31 @@ void loop() {
   
   // Use the calculated from resistance (1) to estimate the sensor's bend angle:
   float angle1 = map(Rflex1, flatResistance1, bendResistance1, 0, 90.0);
-  Serial.println("Thumb: " + String(angle1));
+ // Serial.println("Thumb: " + String(angle1));
 
   /*********************************************************************/
   // Use the calculated from resistance (1) to estimate the sensor's bend angle:
   float angle2 = map(Rflex2, flatResistance2, bendResistance2, 0, 90.0);
-  Serial.println("Fore: "+String(angle2));
+ // Serial.println("Fore: "+String(angle2));
 
   /*********************************************************************/
 
   // Use the calculated from resistance (1) to estimate the sensor's bend angle:
   float angle3 = map(Rflex3, flatResistance3, bendResistance3, 0, 90.0);
-  Serial.println("Middle: "+String(angle3));
+ // Serial.println("Middle: "+String(angle3));
 
 
   /*********************************************************************/
 
   // Use the calculated from resistance (1) to estimate the sensor's bend angle:
   float angle4 = map(Rflex4, flatResistance4, bendResistance4, 0, 90.0);
-  Serial.println("Ring: "+String(angle4));
+ // Serial.println("Ring: "+String(angle4));
 
   /*********************************************************************/
 
   // Use the calculated from resistance (1) to estimate the sensor's bend angle:
   float angle5 = map(Rflex5, flatResistance5, bendResistance5, 0, 90.0);
-  Serial.println("Pinky: "+String(angle5));
+//  Serial.println("Pinky: "+String(angle5));
 
 
 /*********************************************************************************************/
@@ -208,12 +208,13 @@ Serial.println();
 /*********************************************************************************************/
 
  mpu.getEvent(&a, &g, &temp0);
- Serial.println("X: " + String(a.acceleration.x) +" "+ "Y: " + String(a.acceleration.y) + " " +"Z: "+String(a.acceleration.z));
 
-
+ Serial.println("{'Thumb': " +String(angle1)+", " + "'Fore': " +String(angle2)+", " + "'Middle': " +String(angle3)+", " + 
+ "'Ring': " +String(angle4)+", " + "'Pinky': " +String(angle5)+", " + "'X': " + String(a.acceleration.x) +", " + "'Y': " + String(a.acceleration.y) +", "
+ "'Z': " + String(a.acceleration.z) + "},");
+ 
  //Serial.println(String(g.gyro.x) +" "+ String(g.gyro.y)+ " " + String(g.gyro.z));
- //Serial.println(g.gyro.y);
- //Serial.println(g.gyro.z);
+
 
 
   /******************************************************/
