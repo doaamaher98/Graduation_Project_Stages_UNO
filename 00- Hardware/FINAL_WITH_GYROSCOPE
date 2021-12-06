@@ -1,5 +1,5 @@
 /*********************************************************************/
-/* FLEX SENSOR (VELOSTAT) READINGS FROM DOAA'S HAND */
+/* FLEX SENSOR  READINGS FROM DOAA'S HAND */
 /*********************************************************************/
 #include <avr/io.h>
 #include "Adafruit_MPU6050.h"
