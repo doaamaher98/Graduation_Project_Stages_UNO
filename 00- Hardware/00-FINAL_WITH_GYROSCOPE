@@ -1,5 +1,5 @@
 /*********************************************************************/
-/* FLEX SENSOR (VELOSTAT) READINGS FROM DOAA'S HAND */
+/* FLEX SENSOR READINGS FROM DOAA'S HAND */
 /*********************************************************************/
 #include <avr/io.h>
 #include "Adafruit_MPU6050.h"
@@ -41,27 +41,23 @@ int flex5Pin = A4;
 /***********************************************/
 
 void setup() {
-  // Setting baud rate
   Serial.begin(19200);
-  
   while (!Serial)
-    delay(10); // will pause Zero
+    delay(10); // will pause Zero, Leonardo, etc until serial console opens
 
-
- //Serial.println("Adafruit MPU6050 test!");
+  Serial.println("Adafruit MPU6050 test!");
 
   // Try to initialize!
-  /*if (!mpu.begin()) {
+  if (!mpu.begin()) {
     Serial.println("Failed to find MPU6050 chip");
     while (1) {
       delay(10);
     }
   }
-  //Serial.println("MPU6050 Found!"); */
-/***********************************************/
-/***********************************************/
-  mpu.setAccelerometerRange(MPU6050_RANGE_16_G);
+  Serial.println("MPU6050 Found!");
 
+  mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+  
   switch (mpu.getAccelerometerRange()) {
   case MPU6050_RANGE_2_G:
     Serial.println("+-2G");
@@ -75,11 +71,9 @@ void setup() {
   case MPU6050_RANGE_16_G:
     Serial.println("+-16G");
     break;
-  } 
-  /***********************************************/
+  }
   
-  mpu.setGyroRange(MPU6050_RANGE_250_DEG);
- 
+  mpu.setGyroRange(MPU6050_RANGE_500_DEG);
   switch (mpu.getGyroRange()) {
   case MPU6050_RANGE_250_DEG:
     Serial.println("+- 250 deg/s");
@@ -93,12 +87,9 @@ void setup() {
   case MPU6050_RANGE_2000_DEG:
     Serial.println("+- 2000 deg/s");
     break;
-  } 
-/******************************************************/
+  }
 
-/*
   mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
-
   switch (mpu.getFilterBandwidth()) {
   case MPU6050_BAND_260_HZ:
     Serial.println("260 Hz");
@@ -122,8 +113,9 @@ void setup() {
     Serial.println("5 Hz");
     break;
   }
-*/
-  delay(100); 
+
+  Serial.println("");
+  delay(100);
 
 /***************************************************/
   pinMode(flex1Pin, INPUT);
@@ -138,9 +130,6 @@ void setup() {
 
 void loop() {
 
-  sensors_event_t a, g, temp0;
-  
-  
   // Read the ADC from THUMB, and calculate voltage and resistance from it
   int ADCflex1 = analogRead(flex1Pin);
   float Vflex1 = ADCflex1 * VCC / 1023.0;
@@ -172,10 +161,6 @@ void loop() {
   /*********************************************************************/
   /****************************************************************/
   
-
-  
- /*********************************************************************/
-  /****************************************************************/
   
   // Use the calculated from resistance (1) to estimate the sensor's bend angle:
   float angle1 = map(Rflex1, flatResistance1, bendResistance1, 0, 90.0);
@@ -210,15 +195,13 @@ void loop() {
 Serial.println();
 /*********************************************************************************************/
 
- mpu.getEvent(&a, &g, &temp0);
+  /* Get new sensor events with the readings */
+  sensors_event_t a, g, temp;
+  mpu.getEvent(&a, &g, &temp);
 
  Serial.println("{'Thumb': " +String(angle1)+", " + "'Fore': " +String(angle2)+", " + "'Middle': " +String(angle3)+", " + 
  "'Ring': " +String(angle4)+", " + "'Pinky': " +String(angle5)+", " + "'AccX': " + String(a.acceleration.x) +", " + "'AccY': " + String(a.acceleration.y) +", "
  "'AccZ': " + String(a.acceleration.z) + "," +"\n"+ "'RotationX': " + String(g.gyro.x) +", " + "'RotationY': " + String(g.gyro.y) +", " + "'RotationZ': " + String(g.gyro.z) +"}");
-
-
- 
-// Serial.println(String(g.gyro.x) +" "+ String(g.gyro.y)+ " " + String(g.gyro.z));
 
 
 
