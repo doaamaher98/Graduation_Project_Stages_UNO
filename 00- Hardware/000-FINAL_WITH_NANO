@@ -1,0 +1,240 @@
+/*********************************************************************/
+/* FLEX SENSOR READINGS FROM DOAA'S HAND */
+/*********************************************************************/
+#include <avr/io.h>
+
+#include "Adafruit_MPU6050.h"
+#include "Adafruit_Sensor.h"
+#include <Wire.h>
+
+Adafruit_MPU6050 mpu;
+
+// Change these constants according to your project's design
+const int VCC = 5;            // voltage at Ardunio 5V line
+const float R_DIV = 10000.0;  // resistor used to create a voltage divider
+
+/* Flex (1) : THUMB */
+const float flatResistance1 = 28500.0;  // resistance when flat
+const float bendResistance1 = 57500.0;  // resistance at 90 deg
+int flex1Pin = A0;
+/*********************************************************************/
+/* Flex (2) : Index */
+const float flatResistance2 = 13000.0;  // resistance when flat
+const float bendResistance2 = 24000.0;  // resistance at 90 deg
+int flex2Pin = A1;
+/*********************************************************************/
+/* Flex (3) : Middle */
+const float flatResistance3 = 18000.0;  // resistance when flat
+const float bendResistance3 = 47000.0;  // resistance at 90 deg
+int flex3Pin = A2;
+/*********************************************************************/
+/* Flex (4) : Ring */
+const float flatResistance4 = 13000.0;  // resistance when flat
+const float bendResistance4 = 34000.0;  // resistance at 90 deg
+int flex4Pin = A3;
+/*********************************************************************/
+/* Flex (5) : Pinky */
+const float flatResistance5 = 30000.0;   // resistance when flat
+const float bendResistance5 = 80000.0;  // resistance at 90 deg
+int flex5Pin = A6 ;
+
+/***********************************************/
+/***********************************************/
+void setup() {
+  Serial.begin(19200);
+
+  /******************************************/
+  pinMode(flex1Pin, INPUT);
+  pinMode(flex2Pin, INPUT);
+  pinMode(flex3Pin, INPUT);
+  pinMode(flex4Pin, INPUT);
+  pinMode(flex5Pin, INPUT);
+  /******************************************/
+
+  /***************** GYRO ********************/
+  while (!Serial)
+    delay(10); // will pause Zero, Leonardo, etc until serial console opens
+
+  Serial.println("Adafruit MPU6050 test!");
+
+  // Try to initialize!
+  if (!mpu.begin()) {
+    Serial.println("Failed to find MPU6050 chip");
+    while (1) {
+      delay(10);
+    }
+  }
+  Serial.println("MPU6050 Found!");
+/*****************************************************/
+  mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+  
+  switch (mpu.getAccelerometerRange()) {
+  case MPU6050_RANGE_2_G:
+    Serial.println("+-2G");
+    break;
+  case MPU6050_RANGE_4_G:
+    Serial.println("+-4G");
+    break;
+  case MPU6050_RANGE_8_G:
+    Serial.println("+-8G");
+    break;
+  case MPU6050_RANGE_16_G:
+    Serial.println("+-16G");
+    break;
+  }
+  /*****************************************************/
+  mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+  switch (mpu.getGyroRange()) {
+  case MPU6050_RANGE_250_DEG:
+    Serial.println("+- 250 deg/s");
+    break;
+  case MPU6050_RANGE_500_DEG:
+    Serial.println("+- 500 deg/s");
+    break;
+  case MPU6050_RANGE_1000_DEG:
+    Serial.println("+- 1000 deg/s");
+    break;
+  case MPU6050_RANGE_2000_DEG:
+    Serial.println("+- 2000 deg/s");
+    break;
+  }
+/******************************************************/
+  mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
+  switch (mpu.getFilterBandwidth()) {
+  case MPU6050_BAND_260_HZ:
+    Serial.println("260 Hz");
+    break;
+  case MPU6050_BAND_184_HZ:
+    Serial.println("184 Hz");
+    break;
+  case MPU6050_BAND_94_HZ:
+    Serial.println("94 Hz");
+    break;
+  case MPU6050_BAND_44_HZ:
+    Serial.println("44 Hz");
+    break;
+  case MPU6050_BAND_21_HZ:
+    Serial.println("21 Hz");
+    break;
+  case MPU6050_BAND_10_HZ:
+    Serial.println("10 Hz");
+    break;
+  case MPU6050_BAND_5_HZ:
+    Serial.println("5 Hz");
+    break;
+  }
+/*********************************************************/
+  Serial.println("");
+  delay(100);
+/***************************************************/
+/***************************************************/
+}
+
+/*********************************************************************/
+/*********************************************************************/
+
+void loop() {
+  /***************************************************/
+ // Read the ADC from THUMB, and calculate voltage and resistance from it
+  int ADCflex1 = analogRead(flex1Pin);
+  float Vflex1 = ADCflex1 * VCC / 1023.0;
+  float Rflex1 = R_DIV * (VCC / Vflex1 - 1.0);
+ // Serial.println("Resistance 1: " + String(Rflex1) + " ohms");
+  /*********************************************************************/
+
+  // Read the ADC from INDEX, and calculate voltage and resistance from it
+  int ADCflex2 = analogRead(flex2Pin);
+  float Vflex2 = ADCflex2 * VCC / 1023.0;
+  float Rflex2 = R_DIV * (VCC / Vflex2 - 1.0);
+ // Serial.println("Resistance 2: " + String(Rflex2) + " ohms");
+  /*********************************************************************/
+
+  // Read the ADC from MIDDLE, and calculate voltage and resistance from it
+  int ADCflex3 = analogRead(flex3Pin);
+  float Vflex3 = ADCflex3 * VCC / 1023.0;
+  float Rflex3 = R_DIV * (VCC / Vflex3 - 1.0);
+ // Serial.println("Resistance 3: " + String(Rflex3) + " ohms");
+  /*********************************************************************/
+
+  // Read the ADC from RING, and calculate voltage and resistance from it
+  int ADCflex4 = analogRead(flex4Pin);
+  float Vflex4 = ADCflex4 * VCC / 1023.0;
+  float Rflex4 = R_DIV * (VCC / Vflex4 - 1.0);
+ // Serial.println("Resistance 4: " + String(Rflex4) + " ohms");
+  /*********************************************************************/
+
+  // Read the ADC from LITTLE, and calculate voltage and resistance from it
+  int ADCflex5 = analogRead(flex5Pin);
+  float Vflex5 = ADCflex5 * VCC / 1023.0;
+  float Rflex5 = R_DIV * (VCC / Vflex5 - 1.0);
+ // Serial.println("Resistance 5: " + String(Rflex5) + " ohms");
+
+  /*********************************************************************/
+
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle1 = map(Rflex1, flatResistance1, bendResistance1, 0, 90.0);
+ // Serial.println("Thumb: " + String(angle1) + " degrees");
+ // Serial.println();
+
+  /*********************************************************************/
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle2 = map(Rflex2, flatResistance2, bendResistance2, 0, 90.0);
+ // Serial.println("Fore: " + String(angle2) + " degrees");
+ // Serial.println();
+
+  /*********************************************************************/
+
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle3 = map(Rflex3, flatResistance3, bendResistance3, 0, 90.0);
+ // Serial.println("Middle: " + String(angle3) + " degrees");
+ // Serial.println();
+
+  /*********************************************************************/
+
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle4 = map(Rflex4, flatResistance4, bendResistance4, 0, 90.0);
+ // Serial.println("Ring: " + String(angle4) + " degrees");
+ // Serial.println();
+  /*********************************************************************/
+
+  // Use the calculated from resistance (1) to estimate the sensor's bend angle:
+  float angle5 = map(Rflex5, flatResistance5, bendResistance5, 0, 90.0);
+ // Serial.println("Pinky: " + String(angle5) + " degrees");
+ // Serial.println();
+/**********************************************************************************************/
+/**********************************************************************************************/
+Serial.println();
+/*********************************************************************************************/
+
+  /* Get new sensor events with the readings */
+  sensors_event_t a, g, temp;
+  mpu.getEvent(&a, &g, &temp);
+
+ Serial.println("{'Thumb': " +String(angle1)+", " + "'Fore': " +String(angle2)+", " + "'Middle': " +String(angle3)+", " + 
+ "'Ring': " +String(angle4)+", "  + "'Pinky': " +String(angle5)+", "+ "'AccX': " + String(a.acceleration.x) +", " + "'AccY': " + String(a.acceleration.y) +", "
+ "'AccZ': " + String(a.acceleration.z) + "," +"\n"+ "'RotationX': " + String(g.gyro.x) +", " + "'RotationY': " + String(g.gyro.y) +", " + "'RotationZ': " + String(g.gyro.z) +"}");
+
+
+
+  /******************************************************/
+  /****** Sending floats through Bluetooth Module ******/
+  /*****************************************************/
+
+/* Array of floats */
+  float arr_data[5] = {angle1,angle2,angle3,angle4,angle5};
+  //a.acceleration.x,a.acceleration.y,a.acceleration.z,g.gyro.x,g.gyro.y,g.gyro.z}; 
+
+
+
+ /* Looping through Array */
+  Serial.print(String(arr_data[0]) + "," + String(arr_data[1]) + ","+ String(arr_data[2]) + 
+  "," +String(arr_data[3]) + "," +String(arr_data[4])); 
+  //String(arr_data[5]))+ "," +String(arr_data[6])+String(arr_data[7]) + "," +String(arr_data[8])
+  //+String(arr_data[9]) + "," +String(arr_data[10])); 
+
+  /* New Line */
+ Serial.println();
+  
+  /*********** Sending data with a delay of 1 sec **********************/
+  delay(1000);
+}
