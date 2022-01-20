@@ -1,0 +1,25 @@
+#define cellPin A0
+
+const float mvc = 4.68;
+
+float counts = 0;
+float mv = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(19200);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  counts = analogRead(cellPin);
+  Serial.println(String(counts/1023.0 * 100) + String(" %"));
+
+  mv = counts * mvc;
+  Serial.println(String(mv) + String(" mv"));
+
+Serial.println();
+  delay(1000);
+
+}
