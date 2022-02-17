@@ -302,7 +302,7 @@ void loop() {
 
   /* Looping through Array */
   Serial.print(String(arr_data[0]) + "," + String(arr_data[1]) + "," + String(arr_data[2]) +
-               "," + String(arr_data[3]) + "," + String(arr_data[4]) + "," + String(arr_data[5]) + String(arr_data[6]) + "," + String(arr_data[7])
+               "," + String(arr_data[3]) + "," + String(arr_data[4]) + "," + String(arr_data[5]) + "," + String(arr_data[6]) + "," + String(arr_data[7])
                + "," + String(arr_data[8]) + "," + String(arr_data[9]));
 
   //  delay(100);
