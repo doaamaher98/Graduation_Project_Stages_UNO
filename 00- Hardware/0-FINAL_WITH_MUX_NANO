@@ -30,7 +30,7 @@ const int VCC = 5;            // voltage at Ardunio 5V line
 const float R_DIV = 10000.0;  // resistor used to create a voltage divider
 
 /****************************************************/
-/* For battery level calculation */
+/* For battery level calculation  */
 #define cellPin A7
 
 const float mvc = 4.68; // VCC OF NANO
