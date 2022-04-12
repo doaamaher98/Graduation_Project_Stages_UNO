@@ -269,7 +269,7 @@ void loop() {
   // Serial.println();
   /**********************************************************************************************/
   /**********************************************************************************************/
-  Serial.println();
+  //  Serial.println();
   /*********************************************************************************************/
   /******************* BATTERY LEVEL **********************************************************/
   counts = analogRead(cellPin);
@@ -299,11 +299,14 @@ void loop() {
   /* Array of floats */
   float arr_data[11] = {angle1, angle2, angle3, angle4, angle5, g.gyro.x, g.gyro.y, g.gyro.z, a.acceleration.x, a.acceleration.y, a.acceleration.z};
 
+  if (angle1 >= 50 && angle1 < 200)
+  {
+    /* Looping through Array */
+    Serial.println(String(arr_data[0]) + "," + String(arr_data[1]) + "," + String(arr_data[2]) +
+                   "," + String(arr_data[3]) + "," + String(arr_data[4]) + "," + String(arr_data[5]) + "," + String(arr_data[6]) + "," + String(arr_data[7]) + "," + String(arr_data[8])
+                   + "," + String(arr_data[9]) + "," + String(arr_data[10]));
+  }
 
-  /* Looping through Array */
-  Serial.println(String(arr_data[0]) + "," + String(arr_data[1]) + "," + String(arr_data[2]) +
-               "," + String(arr_data[3]) + "," + String(arr_data[4]) + "," + String(arr_data[5]) + "," + String(arr_data[6]) + "," + String(arr_data[7]) + "," + String(arr_data[8])
-               + "," + String(arr_data[9]) + "," + String(arr_data[10]));
 
   //  delay(10);
 
@@ -436,5 +439,5 @@ void loop() {
   //  Serial.println();
 
   /*********** Sending data with a delay of 1 sec **********************/
-  delay(50);
+  delay(10);
 }
