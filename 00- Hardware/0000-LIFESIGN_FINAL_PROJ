@@ -299,7 +299,7 @@ void loop() {
   /* Array of floats */
   float arr_data[11] = {angle1, angle2, angle3, angle4, angle5, g.gyro.x, g.gyro.y, g.gyro.z, a.acceleration.x, a.acceleration.y, a.acceleration.z};
 
-  if (angle1 >= 50 && angle1 < 200)
+  if (angle1 >= 50 && angle1 <= 200)
   {
     /* Looping through Array */
     Serial.println(String(arr_data[0]) + "," + String(arr_data[1]) + "," + String(arr_data[2]) +
